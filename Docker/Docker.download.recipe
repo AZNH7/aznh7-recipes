@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Docker.</string>
 	<key>Identifier</key>
-	<string>local.jss.Docker.download.Docker</string>
+	<string>com.github.aznh7.download.Docker</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>

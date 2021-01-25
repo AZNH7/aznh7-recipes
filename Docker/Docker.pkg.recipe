@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Docker and creates a package.</string>
 	<key>Identifier</key>
-	<string>local.jss.Docker.pkg.Docker</string>
+	<string>com.github.aznh7.pkg.Docker</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -14,7 +14,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>local.jss.Docker.download.Docker</string>
+	<string>com.github.aznh7.download.Docker</string>
 	<key>Process</key>
 	<array>
 		<dict>

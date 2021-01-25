@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Docker and imports it into your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.aznh7-recipes.jss.Docker</string>
+	<string>com.github.aznh7.jss.Docker</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -28,21 +28,21 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>local.jss.Docker.pkg.Docker</string>
+	<string>com.github.aznh7.pkg.Docker</string>
 	<key>ParentRecipeTrustInfo</key>
 	<dict>
 		<key>non_core_processors</key>
 		<dict/>
 		<key>parent_recipes</key>
 		<dict>
-			<key>local.jss.Docker.download.Docker</key>
+			<key>com.github.aznh7.download.Docker</key>
 			<dict>
 				<key>path</key>
 				<string>~/Sync/GitHub/aznh7-recipes/Docker/Docker.download.recipe</string>
 				<key>sha256_hash</key>
 				<string>653d91b981fe9eaef7755cdf6e30c2e766b300e242d1ba6113432bdc31d69648</string>
 			</dict>
-			<key>local.jss.Docker.pkg.Docker</key>
+			<key>com.github.aznh7.pkg.Docker</key>
 			<dict>
 				<key>path</key>
 				<string>~/Sync/GitHub/aznh7-recipes/Docker/Docker.pkg.recipe</string>
