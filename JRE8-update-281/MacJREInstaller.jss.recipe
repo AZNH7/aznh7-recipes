@@ -29,6 +29,32 @@
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
 	<string>com.github.aznh7.pkg.MacJREInstaller</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.aznh7.download.MacJREInstaller</key>
+			<dict>
+				<key>git_hash</key>
+				<string>334764e77b60e689b3e5f8d1fee72ab32bc3daf5</string>
+				<key>path</key>
+				<string>~/Sync/GitHub/aznh7-recipes/JRE8-update-281/MacJREInstaller.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>c5212aa45db91fadbafb918966f60add2ce120c6577a702131c51bb9fc001e9d</string>
+			</dict>
+			<key>com.github.aznh7.pkg.MacJREInstaller</key>
+			<dict>
+				<key>git_hash</key>
+				<string>334764e77b60e689b3e5f8d1fee72ab32bc3daf5</string>
+				<key>path</key>
+				<string>~/Sync/GitHub/aznh7-recipes/JRE8-update-281/MacJREInstaller.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>bf12deb3860dd893a8cea99729e8f11e3f28ac1313e61a964524b59f11e23fc8</string>
+			</dict>
+		</dict>
+	</dict>
 	<key>Process</key>
 	<array>
 		<dict>
