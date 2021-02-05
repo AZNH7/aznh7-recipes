@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Docker and creates a package.</string>
 	<key>Identifier</key>
-	<string>com.github.aznh7.pkg.Docker</string>
+	<string>com.github.aznh7-recipes.pkg.Docker</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -14,14 +14,14 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.aznh7.download.Docker</string>
+	<string>com.github.aznh7-recipes.download.Docker</string>
 	<key>ParentRecipeTrustInfo</key>
 	<dict>
 		<key>non_core_processors</key>
 		<dict/>
 		<key>parent_recipes</key>
 		<dict>
-			<key>com.github.aznh7.download.Docker</key>
+			<key>com.github.aznh7-recipes.download.Docker</key>
 			<dict>
 				<key>git_hash</key>
 				<string>0350fc695273568b8b8e3521a41c5cd18d730ee3</string>
