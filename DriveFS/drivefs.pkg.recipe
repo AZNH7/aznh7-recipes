@@ -64,6 +64,7 @@
 			</dict>
 		</dict>
 		<key>parent_recipes</key>
+		<string>com.github.aznh7-recipes.download.googledrivefs</string>
 		<dict>
 			<key>com.github.aznh7-recipes.download.Docker</key>
 		<dict>
