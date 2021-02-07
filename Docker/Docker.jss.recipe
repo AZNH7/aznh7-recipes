@@ -38,20 +38,20 @@
 			<key>com.github.aznh7-recipes.download.Docker</key>
 			<dict>
 				<key>git_hash</key>
-				<string>0350fc695273568b8b8e3521a41c5cd18d730ee3</string>
+				<string>19d962b12a90f9cdf187c993e49933b051a91df0</string>
 				<key>path</key>
 				<string>~/Sync/GitHub/aznh7-recipes/Docker/Docker.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>1eb3f72408291d8738e2c754bec925ae294dda97106c5b3459ae015d245f025d</string>
+				<string>a783f2801d044927c3cd1716125b38b77a0feee5ef6bfc5b0a371a5a09b1172b</string>
 			</dict>
 			<key>com.github.aznh7-recipes.pkg.Docker</key>
 			<dict>
 				<key>git_hash</key>
-				<string>0350fc695273568b8b8e3521a41c5cd18d730ee3</string>
+				<string>19d962b12a90f9cdf187c993e49933b051a91df0</string>
 				<key>path</key>
 				<string>~/Sync/GitHub/aznh7-recipes/Docker/Docker.pkg.recipe</string>
 				<key>sha256_hash</key>
-				<string>3325b39b6aceb36a2a2fcf990234d86996ff67b7c974e0eca3cc14ad21841fbe</string>
+				<string>37370d030daf502947be6784ff30b6a498e6cb3e06e1ec3d644658e1ecb61e87</string>
 			</dict>
 		</dict>
 	</dict>
