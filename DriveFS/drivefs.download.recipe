@@ -24,10 +24,22 @@
 				<string>%DOWNLOAD_URL%</string>
 				<key>filename</key>
 				<string>%NAME%.dmg</string>
+			<dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>expected_authority_names</key>
+					<array>
+						<string>Developer ID Installer: Google LLC (EQHXZ8M8AV)</string>
+						<string>Developer ID Certification Authority</string>
+						<string>Apple Root CA</string>
+					</array>
+					<key>input_path</key>
+					<string>%pathname%/GoogleDrive.pkg</string>
+				</dict>
+				<key>Processor</key>
+				<string>CodeSignatureVerifier</string>
 			</dict>
-			<key>Processor</key>
-			<string>CodeSignatureVerifier</string>
-			<key>Arguments</key>
 		</dict>
 		<dict>
 			<key>Processor</key>
