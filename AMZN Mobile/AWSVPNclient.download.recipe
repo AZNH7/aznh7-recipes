@@ -47,6 +47,10 @@
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
 		</dict>
+		<dict>
+		<key>Processor</key>
+		<string>AppPkgCreator</string>
+	</dict>
 	</array>
 </dict>
 </plist>
