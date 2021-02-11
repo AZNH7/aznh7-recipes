@@ -33,6 +33,7 @@
 		</dict>
 	</dict>
 	<key>Process</key>
+	<string>CodeSignatureVerifier</string>
 	<array>
 		<dict>
 			<key>Processor</key>
