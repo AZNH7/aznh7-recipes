@@ -54,9 +54,6 @@
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
 			</dict>
-			<key>Processor</key>
-			<string>PkgCopier</string>
-			</dict>
 		</dict>
 	</array>
 </dict>
