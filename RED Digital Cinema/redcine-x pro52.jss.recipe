@@ -30,7 +30,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.aznh7-recipes.pkg.redcine-xpro52</string>
+	<string>com.github.timsutton.download.redcine-xpro</string>
 	<key>Process</key>
 	<array>
 		<dict>
