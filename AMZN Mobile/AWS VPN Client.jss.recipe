@@ -39,6 +39,23 @@
 				<key>groups</key>
 				<array>
 					<dict>
+						<key>ext_attribute_path</key>
+						<string>CFBundleVersionExtensionAttribute.xml</string>
+					</dict>
+				</array>
+				<key>groups</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>%GROUP_NAME%</string>
+						<key>smart</key>
+						<true/>
+						<key>template_path</key>
+						<string>%GROUP_TEMPLATE%</string>
+					</dict>
+				</array>
+				<array>
+					<dict>
 						<key>name</key>
 						<string>%GROUP_NAME%</string>
 						<key>smart</key>
