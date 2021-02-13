@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
 	<string>Downloads the latest version of AWS VPN Client.</string>
 	<key>Identifier</key>
@@ -12,48 +14,50 @@
 		<string>AWS VPN Client</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.2.0</string>
-	<key>ParentRecipe</key>
-	<string>com.github.aznh7-recipes.download.AWSVPNClient</string>
+	<string>1.0.0</string>
 	<key>Process</key>
 	<array>
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack</string>
-				<key>flat_pkg_path</key>
-				<string>%pathname%/AWS_VPN_Client.pkg</string>
-				<key>purge_destination</key>
-				<true/>
+				<key>filename</key>
+				<string>%NAME%.pkg</string>
+				<key>url</key>
+				<string>https://d20adtppz83p9s.cloudfront.net/OSX/latest/AWS_VPN_Client.pkg</string>
 			</dict>
 			<key>Processor</key>
-			<string>FlatPkgUnpacker</string>
+			<string>URLDownloader</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/payload</string>
-				<key>pkg_payload_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack/AWS_VPN_Client.pkg/payload</string>
-				<key>purge_destination</key>
-				<true/>
+				<key>expected_authority_names</key>
+				<array>
+					<string>Developer ID Installer: AMZN Mobile LLC (94KV3E626L)</string>
+					<string>Developer ID Certification Authority</string>
+					<string>Apple Root CA</string>
+				</array>
+				<key>input_path</key>
+				<string>%pathname%</string>
 			</dict>
+		</dict>
+			<dict>
 			<key>Processor</key>
-			<string>PkgPayloadUnpacker</string>
+			<string>PkgCopier</string>
+			<key>Arguments</key>
+			<dict>
+				<key>source_pkg</key>
+				<string>%RECIPE_CACHE_DIR%/downloads/%filename%/GoogleDriveFileStream.pkg</string>
+				<key>pkg_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+			</dict>
 		</dict>
-		<dict>
-		<key>Processor</key>
-		<string>PkgCopier</string>
-		<key>Arguments</key>
-		<dict>
-			<key>source_pkg</key>
-			<string>%RECIPE_CACHE_DIR%/downloads/%filename%/AWS_VPN_Client.pkg</string>
-			<key>pkg_path</key>
-			<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
-		</dict>
-	</dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
 		</dict>
 	</array>
 </dict>
