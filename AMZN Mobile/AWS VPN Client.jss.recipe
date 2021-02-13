@@ -2,8 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of AWS VPN Client.</string>
+	<string>Downloads the latest version of AWS VPN Client and imports it into your JSS.</string>
 	<key>Identifier</key>
 	<string>com.github.aznh7-recipes.jss.AWSVPNClient</string>
 	<key>Input</key>
@@ -21,7 +23,7 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>The client for AWS Client VPN is provided free of charge. You can connect your computer directly to AWS Client VPN for an end-to-end VPN experience. The software client is compatible with all features of AWS Client VPN..</string>
+		<string>AWStats is a free powerful and featureful tool that generates advanced web, streaming, ftp or mail server statistics, graphically.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>%NAME%.png</string>
 	</dict>
@@ -37,23 +39,6 @@
 				<key>category</key>
 				<string>%CATEGORY%</string>
 				<key>groups</key>
-				<array>
-					<dict>
-						<key>ext_attribute_path</key>
-						<string>CFBundleVersionExtensionAttribute.xml</string>
-					</dict>
-				</array>
-				<key>groups</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>%GROUP_NAME%</string>
-						<key>smart</key>
-						<true/>
-						<key>template_path</key>
-						<string>%GROUP_TEMPLATE%</string>
-					</dict>
-				</array>
 				<array>
 					<dict>
 						<key>name</key>
@@ -79,6 +64,5 @@
 			<string>JSSImporter</string>
 		</dict>
 	</array>
-	
 </dict>
 </plist>
