@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of REDCINE-X PRO 52.</string>
 	<key>Identifier</key>
-	<string>com.github.aznh7-recipes.download.REDCINE-XPRO52</string>
+	<string>com.github.aznh7-recipes.download.redcine-xpro52</string>
 	<key>Input</key>
 	<dict>
 		<key>APP_FILENAME</key>
