@@ -18,8 +18,22 @@
 	<key>Process</key>
 	<array>
 		<dict>
-			<key>Processor</key>
-			<string>PkgCreator</string>
+		<key>Processor</key>
+		<string>PkgCreator</string>
+		<key>Arguments</key>
+		<dict>
+			<key>pkgname</key>
+			<string>%NAME%-%version%</string>
+			<key>pkg_request</key>
+			<dict>
+				<key>pkgdir</key>
+				<string>%RECIPE_CACHE_DIR%</string>
+				<key>id</key>
+				<string>com.google.GoogleDrive.pkg</string>
+				<key>options</key>
+				<string>purge_ds_store</string>
+				<key>chown</key>
+				<array>
 		</dict>
 	</array>
 </dict>
