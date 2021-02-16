@@ -33,29 +33,11 @@
 	<string>0.4.0</string>
 	<key>ParentRecipe</key>
 	<string>com.github.gmarnin.pkg.tableau-desktop</string>
-	<key>ParentRecipeTrustInfo</key>
-	<dict>
-		<key>non_core_processors</key>
-		<dict/>
-		<key>parent_recipes</key>
-		<dict>
-			<key>com.github.gmarnin.download.tableau-desktop</key>
-			<dict>
-				<key>path</key>
-				<string>~/Library/autopkg/RecipeRepos/com.github.autopkg.gmarnin-recipes/Tableau/Tableau.download.recipe</string>
-				<key>sha256_hash</key>
-				<string>3bb9619ae20b1c1ce4b293d54a508b078ebadeea0f4270c466b1ebde01d19247</string>
-			</dict>
-			<key>com.github.gmarnin.pkg.tableau-desktop</key>
-			<dict>
-				<key>path</key>
-				<string>~/Library/autopkg/RecipeRepos/com.github.autopkg.gmarnin-recipes/Tableau/Tableau.pkg.recipe</string>
-				<key>sha256_hash</key>
-				<string>fed9874977d91c9da00f5eb9c3d5ba975dd592f05c5762313369fcf4f467464f</string>
-			</dict>
-		</dict>
-	</dict>
 	<key>Process</key>
+	<dict>
+	<key>Processor</key>
+	<string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
+	</dict>
 	<array>
 		<dict>
 			<key>Arguments</key>
