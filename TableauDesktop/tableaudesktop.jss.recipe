@@ -34,11 +34,11 @@
 	<key>ParentRecipe</key>
 	<string>com.github.gmarnin.pkg.tableau-desktop</string>
 	<key>Process</key>
-	<dict>
-	<key>Processor</key>
-	<string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
-	</dict>
 	<array>
+	<dict>
+		<key>Processor</key>
+		<string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
+	</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -55,8 +55,6 @@
 						<string>%GROUP_TEMPLATE%</string>
 					</dict>
 				</array>
-				<key>os_requirements</key>
-				<string>%OS_REQUIREMENTS%</string>
 				<key>policy_category</key>
 				<string>%POLICY_CATEGORY%</string>
 				<key>policy_template</key>
