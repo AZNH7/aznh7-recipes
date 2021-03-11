@@ -25,6 +25,8 @@
 				<key>filename</key>
 				<string>%NAME%.dmg</string>
 			</dict>
+			<key>Processor</key>
+            <string>CodeSignatureVerifier</string>
 		</dict>
 		<dict>
 			<key>Processor</key>
