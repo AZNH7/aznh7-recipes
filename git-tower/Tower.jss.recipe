@@ -28,7 +28,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.aznh7-recipes.pkg.Tower</string>
+	<string>com.github.homebysix.pkg.Tower</string>
 	<key>Process</key>
 	<array>
 		<dict>
