@@ -18,17 +18,15 @@
 	<key>Process</key>
 	<array>
 		<dict>
-			<key>Comment</key>
-			<string>Get version from the app</string>
-			<key>Processor</key>
-			<string>Versioner</string>
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Info.plist</string>
+				<string>%RECIPE_CACHE_DIR%/Applications/AWS VPN Client.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
+			<key>Processor</key>
+			<string>Versioner</string>
 		</dict>
 		<dict>
 			<key>Processor</key>
@@ -41,18 +39,18 @@
 				<string>%RECIPE_CACHE_DIR%/%NAME%.pkg</string>
 			</dict>
 		</dict>
-		// <dict>
-		// 	<key>Processor</key>
-		// 	<string>PathDeleter</string>
-		// 	<key>Arguments</key>
-		// 	<dict>
-		// 		<key>path_list</key>
-		// 		<array>
-		// 			<string>%RECIPE_CACHE_DIR%/unpack</string>
-		// 			<string>%RECIPE_CACHE_DIR%/Applications/AWS VPN Client/</string>
-		// 		</array>
-		// 	</dict>
-		// </dict>
+		<dict>
+			<key>Processor</key>
+			<string>PathDeleter</string>
+			<key>Arguments</key>
+			<dict>
+				<key>path_list</key>
+				<array>
+					<string>%RECIPE_CACHE_DIR%/unpack</string>
+					<string>%RECIPE_CACHE_DIR%/Applications/AWS VPN Client/</string>
+				</array>
+			</dict>
+		</dict>
 	</array>
 </dict>
 </plist>
