@@ -21,7 +21,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/Applications/AWS VPN Client.app/Contents/Info.plist</string>
+				<string>%RECIPE_CACHE_DIR%/Applications/%NAME%.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
@@ -47,7 +47,7 @@
 				<key>path_list</key>
 				<array>
 					<string>%RECIPE_CACHE_DIR%/unpack</string>
-					<string>%RECIPE_CACHE_DIR%/Applications/AWS VPN Client/</string>
+					<string>%RECIPE_CACHE_DIR%/Applications/%NAME%/</string>
 				</array>
 			</dict>
 		</dict>
