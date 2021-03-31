@@ -13,6 +13,8 @@
 		<key>DOWNLOAD_URL</key>
 		<string>https://dl.google.com/drive-file-stream/googledrivefilestream.dmg</string>
 	</dict>
+	<key>MinimumVersion</key>
+    <string>1.0.0</string>
 	<key>Process</key>
 	<array>
 		<dict>
