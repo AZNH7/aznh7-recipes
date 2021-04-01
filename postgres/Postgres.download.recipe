@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Postgres.</string>
 	<key>Identifier</key>
-	<string>com.github.aznh7-recipes.download.Postgres</string>
+	<string>com.github.aznh7-recipes.download.postgres</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -19,7 +19,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>appcast_url</key>
-				<string>https://postgresapp.com/sparkle/updates_13.xml</string>
+				<string>https://postgresapp.com/sparkle/updates_11.xml</string>
 			</dict>
 			<key>Processor</key>
 			<string>SparkleUpdateInfoProvider</string>
