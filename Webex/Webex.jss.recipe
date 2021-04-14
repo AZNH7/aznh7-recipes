@@ -5,9 +5,9 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Install Navi and imports it into your JSS.</string>
+	<string>Downloads the latest version of Webex and imports it into your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.jss-recipes.jss.InstallNavi</string>
+	<string>com.github.jss-recipes.jss.Webex</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -15,22 +15,22 @@
 		<key>GROUP_NAME</key>
 		<string>%NAME%-update-smart</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>SmartGroupTemplate.xml</string>
+		<string>CFBundleVersionSmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>Install Navi</string>
+		<string>Webex</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Testing</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Zero Install is a decentralised cross-distribution software installation system. Other features include full support for shared libraries, sharing between users, and integration with native platform package managers.</string>
+		<string>WebEx client plug-in.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>%NAME%.png</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>aznh7-recipes.pkg.InstallNavi</string>
+	<string>aznh7-recipes.pkg.Webex</string>
 	<key>Process</key>
 	<array>
 		<dict>
@@ -38,6 +38,13 @@
 			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
+				<key>extension_attributes</key>
+				<array>
+					<dict>
+						<key>ext_attribute_path</key>
+						<string>CFBundleVersionExtensionAttribute.xml</string>
+					</dict>
+				</array>
 				<key>groups</key>
 				<array>
 					<dict>
