@@ -30,7 +30,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>aznh7-recipes.pkg.Webex</string>
+	<string>com.github.aznh7-recipes.pkg.Webex</string>
 	<key>Process</key>
 	<array>
 		<dict>
