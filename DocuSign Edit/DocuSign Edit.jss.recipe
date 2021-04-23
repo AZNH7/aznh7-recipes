@@ -2,33 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the current release version of Google ads editor and builds a package. Then, uploads to the JSS.</string>
+	<string>Downloads the latest version of DocuSign Edit and imports it into your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.aznh7-recipes.jss.googleadseditor</string>
+	<string>com.github.jss-recipes.jss.DocuSignEdit</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>Marketing</string>
+		<string>Productivity</string>
 		<key>GROUP_NAME</key>
 		<string>%NAME%-update-smart</string>
 		<key>GROUP_TEMPLATE</key>
 		<string>SmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>GoogleAdsEditor</string>
+		<string>DocuSign Edit</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Testing</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>A free application for managing large AdWords accounts.</string>
+		<string>Create, Convert, Review and Edit PDF Documents on Windows, Mac OS X, and Linux. PDF Studio is an all-in-one, easy to use PDF editor that provides all PDF features needed at a fraction of the cost of &lt;a href='https://alternativeto' rel='nofollow'&gt;https://alternativeto &lt;/a&gt;.</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string></string>
+		<string>%NAME%.png</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.2.0</string>
+	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.aznh7-recipes.pkg.googleadseditor</string>
+	<string>aznh7-recipes.download.DocuSignEdit</string>
 	<key>Process</key>
 	<array>
 		<dict>
