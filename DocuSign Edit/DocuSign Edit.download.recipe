@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of DocuSign Edit.</string>
 	<key>Identifier</key>
-	<string>aznh7-recipes.download.DocuSignEdit</string>
+	<string>com.github.aznh7-recipes.download.DocuSignEdit</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
