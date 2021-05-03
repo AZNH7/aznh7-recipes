@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Figma.</string>
 	<key>Identifier</key>
-	<string>aznh7-recipes.download.Figma</string>
+	<string>com.github.aznh7-recipes.download.Figma</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>

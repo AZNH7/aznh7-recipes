@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Figma and creates a package.</string>
 	<key>Identifier</key>
-	<string>aznh7-recipes.pkg.Figma</string>
+	<string>com.github.aznh7-recipes.pkg.Figma</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>aznh7-recipes.download.Figma</string>
+	<string>com.github.aznh7-recipes.download.Figma</string>
 	<key>Process</key>
 	<array>
 		<dict>
