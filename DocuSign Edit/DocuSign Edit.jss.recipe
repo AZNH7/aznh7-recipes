@@ -23,7 +23,7 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Create, Convert, Review and Edit PDF Documents on Windows, Mac OS X, and Linux. PDF Studio is an all-in-one, easy to use PDF editor that provides all PDF features needed at a fraction of the cost of &lt;a href='https://alternativeto' rel='nofollow'&gt;https://alternativeto &lt;/a&gt;.</string>
+		<string>Create, Convert, Review and Edit PDF Documents on Windows, Mac OS X, and Linux. PDF Studio is an all-in-one, easy to use PDF editor that provides all PDF features needed at a fraction of the cost.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>%NAME%.png</string>
 	</dict>
