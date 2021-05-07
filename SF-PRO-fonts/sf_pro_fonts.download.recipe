@@ -5,7 +5,7 @@
         <key>Description</key>
         <string>Downloads the latest version of SF Pro Fonts</string>
         <key>Identifier</key>
-        <string>com.github.aznh7-recipes.download.SF Pro Fonts</string>
+        <string>com.github.aznh7-recipes.download.sf-pro-fonts</string>
         <key>Input</key>
         <dict>
             <key>NAME</key>

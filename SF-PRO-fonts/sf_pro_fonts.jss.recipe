@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of SF Pro Fonts and imports it into your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.aznh7-recipes.jss.SF Pro Fonts</string>
+	<string>com.github.aznh7-recipes.jss.sf-pro-fonts</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -28,7 +28,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.aznh7-recipes.pkg.SF Pro Fonts</string>
+	<string>com.github.aznh7-recipes.pkg.sf-pro-fonts</string>
 	<key>Process</key>
 	<array>
 		<dict>
