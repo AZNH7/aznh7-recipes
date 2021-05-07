@@ -28,7 +28,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.aznh7-recipes.pkg.sf-pro-fonts</string>
+	<string>com.github.aznh7-recipes.download.sf-pro-fonts</string>
 	<key>Process</key>
 	<array>
 		<dict>
