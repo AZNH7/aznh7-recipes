@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of Docker and imports it into your JSS.</string>
+	<string>Downloads the latest version of Figma fonts installer and imports it into your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.aznh7-recipes.jss.Docker</string>
+	<string>com.github.aznh7-recipes.jss.figma-fonts-installer</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -15,20 +15,20 @@
 		<key>GROUP_TEMPLATE</key>
 		<string>SmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>Docker</string>
+		<string>Figma fonts installer</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Testing</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Automates deployment of Linux applications in containers.</string>
+		<string>Enables teh instaliation of fonts into teh Firma application without the use of Figma's desktop application.</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>%NAME%.png</string>
+		<string></string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.aznh7-recipes.pkg.Docker</string>
+	<string>com.github.aznh7-recipes.download.figma-fonts-installer</string>
 	<key>Process</key>
 	<array>
 		<dict>
