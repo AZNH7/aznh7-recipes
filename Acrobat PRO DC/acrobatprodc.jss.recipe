@@ -3,13 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of Acrobat Reader and imports it into your JSS.</string>
+	<string>Downloads the latest version of Acrobat PRO DC and imports it into your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.aznh7-recipes.jss.AcrobatReader</string>
+	<string>com.github.aznh7-recipes.jss.AcrobatDCInstaller</string>
 	<key>Input</key>
 	<dict>
-		<key>APP_FILENAME</key>
-		<string>Adobe Acrobat Reader DC</string>
 		<key>CATEGORY</key>
 		<string>Productivity</string>
 		<key>GROUP_NAME</key>
@@ -17,7 +15,7 @@
 		<key>GROUP_TEMPLATE</key>
 		<string>SmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>Acrobat Reader</string>
+		<string>Acrobat PRO DC</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Testing</string>
 		<key>POLICY_TEMPLATE</key>
@@ -30,7 +28,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.aznh7-recipes.pkg.AcrobatReader</string>
+	<string>com.github.aznh7-recipes.pkg.AcrobatDCInstaller</string>
 	<key>Process</key>
 	<array>
 		<dict>
@@ -49,8 +47,6 @@
 						<string>%GROUP_TEMPLATE%</string>
 					</dict>
 				</array>
-				<key>jss_inventory_name</key>
-				<string>Adobe Acrobat Reader DC</string>
 				<key>policy_category</key>
 				<string>%POLICY_CATEGORY%</string>
 				<key>policy_template</key>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the latest version of Acrobat PRO DC.</string>
+	<key>Identifier</key>
+	<string>com.github.aznh7-recipes.download.AcrobatDCInstaller</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Acrobat PRO DC</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>filename</key>
+				<string>%NAME%.dmg</string>
+				<key>url</key>
+				<string>https://prod-rel-ffc-ccm.oobesaas.adobe.com/adobe-ffc-external/core/v1/wam/download?sapCode=APRO&amp;productName=Acrobat%20DC&amp;version=21.0&amp;os=mac&amp;guid=44c0dc17-4f81-4ffc-9dae-98b09cfa5527&amp;contextParams=%7B%22component%22%3A%22cc-home%22%2C%22visitor_guid%22%3A%2263782480089310226792142060269893334718%22%2C%22browser%22%3A%22Firefox%22%2C%22context_guid%22%3A%22ac7d6002-86e6-48a9-828e-891566388a09%22%2C%22planCodeList%22%3A%22cc_free%22%2C%22detectAndLaunchPlanCodeList%22%3A%22apcc_direct_individual%7Capap_direct_individual%7Capro_direct_individual%7Cacro_direct_individual%7Cacrobat_pro_dc_sign_funnel_indiv_individual%7Cacrobat_pro_dc_sign_funnel_team_team%7Cacrobat_pro_dc_plus_sign_funnel_individual%7Cacrobat_pro_dc_plus_sign_funnel_team%7Cacrobat_pro_dc_with_advanced_e_sign_pdf_funnel_individual%7Cacrobat_pro_dc_plus_pdf_funnel_team%22%2C%22installerWaitTime%22%3A30%2C%22secondarySapcodeList%22%3A%22%22%2C%22Product_ID_Promoted%22%3A%22APRO%22%2C%22userGuid%22%3A%2243FA04F45FD0A0C40A495F8C%40AdobeID%22%2C%22authId%22%3A%2243FA04F45FD0A0C40A495F8C%40AdobeID%22%2C%22contextComName%22%3A%22ACom%3ACCH%22%2C%22contextSvcName%22%3A%22NO-CCD%22%2C%22contextOrigin%22%3A%22ACom%3ACCH%22%2C%22promocode%22%3A%22PQ7SQB34%22%2C%22gpv%22%3A%22adminconsole.adobe.com%3Ausers%22%2C%22creative-cloud-referrer%22%3A%22https%3A%2F%2Fget.adobe.com%2F%22%2C%22AMCV_9E1005A551ED61CA0A490D45%2540AdobeOrg%22%3A%22870038026%257CMCMID%257C75108754034903775920676826697869174015%257CMCAAMLH-1621952785%257C6%257CMCAAMB-1621952785%257CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%257CMCOPTOUT-1621355185s%257CNONE%257CMCAID%257CNONE%257CMCCIDH%257C63225773%257CvVersion%257C5.0.0%22%2C%22mid%22%3A%2275108754034903775920676826697869174015%22%2C%22aid%22%3A%22%22%2C%22AppMeasurementVersion%22%3A%222.20.0%22%2C%22kaizenTrialDuration%22%3A7%7D&amp;wamFeature=nuj-live&amp;environment=prod&amp;api_key=CCHomeWeb1</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_path</key>
+				<string>%pathname%/Acrobat DC Installer.app</string>
+				<key>requirement</key>
+				<string>anchor apple generic and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = JQ525L2MZD)</string>
+			</dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_plist_path</key>
+				<string>%pathname%/Acrobat DC Installer.app/Contents/Info.plist</string>
+				<key>plist_version_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+			<key>Processor</key>
+			<string>Versioner</string>
+		</dict>
+	</array>
+</dict>
+</plist>
