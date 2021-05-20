@@ -32,7 +32,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.crystalllized.pkg.googledrivefs</string>
+	<string>com.github.aznh7-recipes.pkg.googledrivefs</string>
 	<key>Process</key>
 	<array>
 		<dict>
