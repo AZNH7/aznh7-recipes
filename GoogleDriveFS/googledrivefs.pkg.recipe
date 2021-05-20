@@ -12,7 +12,7 @@
 		<string>Google Drive File Stream</string>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.aznh7-recipes.download.googledrivefs</string>
+	<string>com.github.crystallized.download.googledrivefs</string>
 	<key>Process</key>
 	<array>
 		<dict>
@@ -24,6 +24,8 @@
 				<string>%RECIPE_CACHE_DIR%/unpack/</string>
 				<key>flat_pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/downloads/%filename%/GoogleDrive.pkg</string>
+				<key>purge_destination</key>
+				<string>true</string>
 			</dict>
 		</dict>
 		<dict>
@@ -45,7 +47,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack/Applications/Google Drive.app/Contents/Info.plist</string>
+				<string>%RECIPE_CACHE_DIR%/unpack/Applications/Google Drive File Stream.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
@@ -56,7 +58,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>source_pkg</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/%filename%/GoogleDrive.pkg</string>
+				<string>%RECIPE_CACHE_DIR%/downloads/%filename%/GoogleDriveFileStream.pkg</string>
 				<key>pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
 			</dict>
