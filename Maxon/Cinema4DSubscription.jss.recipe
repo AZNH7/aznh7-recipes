@@ -3,47 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of Google Drive File Stream, repackages it, and then imports it into your JSS.</string>
+	<string>Downloads the latest version of Cinema 4D Subscription and packages it for installation and imports it into JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.aznh7-recipes.jss.googledrivefs</string>
+	<string>com.github.aznh7-recipes.jss.Cinema4DSubscription</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>Productivity</string>
+		<string>Creative Studio</string>
 		<key>GROUP_NAME</key>
 		<string>%NAME%-update-smart</string>
 		<key>GROUP_TEMPLATE</key>
 		<string>SmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>Google Drive File Stream</string>
+		<string>Cinema4DSubscription</string>
 		<key>POLICY_CATEGORY</key>
-		<string>Testing</string>
+		<string>Creative Studio</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string></string>
+		<string>Easy to learn and extremely powerful: Cinema 4D is the perfect package for all 3D artists who want to achieve breathtaking results fast and hassle-free.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>%NAME%.png</string>
-		<key>pkg_path</key>
-		<string></string>
-		<key>STOPPROCESSINGIF_PREDICATE</key>
-		<string>download_changed == False</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.crystalllized.pkg.googledrivefs</string>
+	<string>com.github.foigus.pkg.Cinema4DSubscription</string>
 	<key>Process</key>
 	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>predicate</key>
-				<string>%STOPPROCESSINGIF_PREDICATE%</string>
-			</dict>
-			<key>Processor</key>
-			<string>StopProcessingIf</string>
-		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
