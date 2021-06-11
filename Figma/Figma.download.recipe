@@ -2,16 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Comment</key>
-	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Figma.</string>
+	<string>Downloads the latest version of DynamicUniversalApp.</string>
 	<key>Identifier</key>
-	<string>com.github.aznh7-recipes.download.Figma</string>
+	<string>com.github.aznh7-recipes.download.DynamicUniversalApp</string>
 	<key>Input</key>
 	<dict>
-		<key>NAME</key>
+		<key>APP_FILENAME</key>
 		<string>Figma</string>
+		<key>NAME</key>
+		<string>DynamicUniversalApp</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
@@ -23,7 +23,7 @@
 				<key>filename</key>
 				<string>%NAME%.zip</string>
 				<key>url</key>
-				<string>https://desktop.miro.com/platforms/darwin/Miro.dmg</string>
+				<string>https://www.figma.com/download/desktop/mac</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
@@ -51,7 +51,8 @@
 				<key>input_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%/Figma.app</string>
 				<key>requirement</key>
-				<string>identifier "com.figma.Desktop" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = T8RA8NE3B7</string>			</dict>
+				<string>identifier "com.figma.Desktop.dua" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = T8RA8NE3B7</string>
+			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
 		</dict>

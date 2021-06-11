@@ -5,11 +5,13 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Figma and imports it into your JSS.</string>
+	<string>Downloads the latest version of DynamicUniversalApp and imports it into your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.aznh7-recipes.jss.Figma</string>
+	<string>com.github.aznh7-recipes.jss.DynamicUniversalApp</string>
 	<key>Input</key>
 	<dict>
+		<key>APP_FILENAME</key>
+		<string>Figma</string>
 		<key>CATEGORY</key>
 		<string>Productivity</string>
 		<key>GROUP_NAME</key>
@@ -17,20 +19,20 @@
 		<key>GROUP_TEMPLATE</key>
 		<string>SmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>Figma</string>
+		<string>DynamicUniversalApp</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Testing</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Interface design tool with real-time collaboration.</string>
+		<string></string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>%NAME%.png</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.aznh7-recipes.pkg.Figma</string>
+	<string>com.github.aznh7-recipes.pkg.DynamicUniversalApp</string>
 	<key>Process</key>
 	<array>
 		<dict>
@@ -49,6 +51,8 @@
 						<string>%GROUP_TEMPLATE%</string>
 					</dict>
 				</array>
+				<key>jss_inventory_name</key>
+				<string>Figma</string>
 				<key>policy_category</key>
 				<string>%POLICY_CATEGORY%</string>
 				<key>policy_template</key>
