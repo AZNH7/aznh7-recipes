@@ -14,7 +14,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>aznh7-recipes.download.Miro</string>
+	<string>com.github.aznh7-recipes.download.Miro</string>
 	<key>Process</key>
 	<array>
 		<dict>
