@@ -21,7 +21,8 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Elegant 2 Factor Authenticator.</string>
+		<string>Obsidian is a powerful knowledge base that works on top of
+		a local folder of plain text Markdown files. </string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>%NAME%.png</string>
 	</dict>
