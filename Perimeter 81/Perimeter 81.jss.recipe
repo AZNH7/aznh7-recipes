@@ -28,7 +28,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.aznh7-recipes.pkg.Perimeter81</string>
+	<string>com.github.aznh7-recipes.download.Perimeter81</string>
 	<key>Process</key>
 	<array>
 		<dict>
