@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Perimeter 81.</string>
 	<key>Identifier</key>
-	<string>com.github.aznh7-recipes.download.Perimeter81</string>
+	<string>com.github.aznh7-recipes.pkg.Perimeter81</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
