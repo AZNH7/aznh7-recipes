@@ -21,14 +21,14 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Future Cop: LAPD, is a third-person shooter developed by EA Redwood Shores and published by Electronic Arts and released first for the PlayStation, then Mac OS and Windows.</string>
+		<string></string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>%NAME%.png</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.aznh7-recipes.pkg.Perimeter81</string>
+	<string>com.github.dataJAR-recipes.pkg.Perimeter 81</string>
 	<key>Process</key>
 	<array>
 		<dict>
