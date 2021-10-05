@@ -31,6 +31,14 @@
 		<dict>
 			<key>Processor</key>
 			<string>PkgCopier</string>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>file_content</key>
+				<string>%INSTALL_SCRIPT%</string>
+				<key>file_path</key>
+				<string>%RECIPE_CACHE_DIR%/Scripts/preinstall</string>
+		</dict>
 			<key>Arguments</key>
 			<dict>
 				<key>source_pkg</key>
