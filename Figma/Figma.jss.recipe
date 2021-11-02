@@ -5,9 +5,9 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https: //github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Figma App and imports it into your JSS.</string>
+	<string>Downloads the latest version of figma and imports it into your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.aznh7-recipes.jss.Figma</string>
+	<string>com.github.aznh7-recipes.jss.figma</string>
 	<key>Input</key>
 	<dict>
 		<key>APP_FILENAME</key>
@@ -32,7 +32,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.aznh7-recipes.pkg.Figma</string>
+	<string>com.github.aznh7-recipes.pkg.figma</string>
 	<key>Process</key>
 	<array>
 		<dict>
