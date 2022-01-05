@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>1.0.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.aznh7-recipes.download.DocuSignEdit</string>
+    <string>com.github.aznh7-recipes.download.egnyte_desktop</string>
     <key>Process</key>
     <array>
         <dict>
