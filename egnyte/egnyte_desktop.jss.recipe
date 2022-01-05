@@ -21,7 +21,7 @@
         <key>POLICY_TEMPLATE</key>
         <string>PolicyTemplate.xml</string>
         <key>SELF_SERVICE_DESCRIPTION</key>
-        <string>Keep a local copy of files on your Egnyte cloud storage using this desktop sync agent.</string>
+        <string>Keep a local copy of files on your Egnyte cloud storage using this desktop sync agent</string>
         <key>SELF_SERVICE_ICON</key>
         <string>EgnyteDesktopSync.png</string>
     </dict>
