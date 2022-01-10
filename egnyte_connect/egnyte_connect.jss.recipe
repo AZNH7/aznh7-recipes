@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest Egnyte Desktop Sync package and then uploads to the JSS.</string>
     <key>Identifier</key>
-    <string>com.github.aznh7-recipes.jss.egnyte_desktop</string>
+    <string>com.github.aznh7-recipes.jss.egnyte_connect</string>
     <key>Input</key>
     <dict>
         <key>CATEGORY</key>
@@ -23,12 +23,12 @@
         <key>SELF_SERVICE_DESCRIPTION</key>
         <string>Keep a local copy of files on your Egnyte cloud storage using this desktop sync agent</string>
         <key>SELF_SERVICE_ICON</key>
-        <string>EgnyteDesktopSync.png</string>
+        <string>egnyte_connect.png</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.homebysix.pkg.EgnyteDesktopSync</string>
+    <string>com.github.aznh7-recipes.download.egnyte_connect</string>
     <key>Process</key>
     <array>
         <dict>
