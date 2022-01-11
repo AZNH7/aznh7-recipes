@@ -28,7 +28,7 @@
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.aznh7-recipes.download.egnyte_connect</string>
+    <string>com.github.moofit-recipes.download.EgnyteConnect</string>
     <key>Process</key>
     <array>
         <dict>
