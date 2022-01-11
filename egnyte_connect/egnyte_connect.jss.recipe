@@ -13,7 +13,7 @@
         <key>GROUP_NAME</key>
         <string>%NAME%-update-smart</string>
         <key>GROUP_TEMPLATE</key>
-        <string>EgnyteDesktop-SmartGroupTemplate.xml</string>
+        <string>SmartGroupTemplate.xml</string>
         <key>NAME</key>
         <string>Egnyte Desktop</string>
         <key>POLICY_CATEGORY</key>
@@ -28,7 +28,7 @@
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.moofit-recipes.download.EgnyteConnect</string>
+    <string>com.github.aznh7-recipes.pkg.egnyte_connect</string>
     <key>Process</key>
     <array>
         <dict>
