@@ -17,7 +17,7 @@
     <key>ParentRecipe</key>
     <string>com.github.aznh7-recipes.download.egnyte_connect</string>
     <key>MinimumVersion</key>
-    <string>1.0.1</string>
+    <string>1.0.0</string>
     <key>Process</key>
     <array>
         <dict>

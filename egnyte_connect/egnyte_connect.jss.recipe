@@ -26,7 +26,7 @@
         <string>egnyte_connect.png</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.6.1</string>
+    <string1.0.0</string>
     <key>ParentRecipe</key>
     <string>com.github.aznh7-recipes.pkg.egnyte_connect</string>
     <key>Process</key>
