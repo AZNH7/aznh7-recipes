@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest Egnyte Desktop Sync package and then uploads to the JSS.</string>
     <key>Identifier</key>
-    <string>com.github.aznh7-recipes.jss.EgnyteDesktopSync</string>
+    <string>com.github.aznh7-recipes.jss.EgnyteConnect</string>
     <key>Input</key>
     <dict>
         <key>CATEGORY</key>
@@ -28,7 +28,7 @@
     <key>MinimumVersion</key>
     <string0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.homebysix.pkg.EgnyteDesktopSync</string>
+    <string>com.github.moofit-recipes.pkg.EgnyteConnect</string>
     <key>Process</key>
     <array>
         <dict>
