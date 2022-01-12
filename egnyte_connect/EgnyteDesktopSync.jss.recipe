@@ -26,7 +26,7 @@
         <string>egnyte_connect.png</string>
     </dict>
     <key>MinimumVersion</key>
-    <string1.0.0</string>
+    <string0.6.1</string>
     <key>ParentRecipe</key>
     <string>com.github.homebysix.pkg.EgnyteDesktopSync</string>
     <key>Process</key>
