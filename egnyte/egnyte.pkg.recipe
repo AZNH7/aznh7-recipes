@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>PKG recipe for Egnyte Desktop Sync.</string>
     <key>Identifier</key>
-    <string>com.github.aznh7-recipes.pkg.Egnyte Desktop Sync NoPrefs</string>
+    <string>com.github.aznh7-recipes.pkg.egnyte</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>1.0.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.aznh7-recipes.download.Egnyte Desktop Sync NoPrefs</string>
+    <string>com.github.aznh7-recipes.download.egnyte</string>
     <key>Process</key>
     <array>
         <dict>

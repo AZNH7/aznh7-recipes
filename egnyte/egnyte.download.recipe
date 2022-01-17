@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest version of Egnyte Desktop Sync.</string>
     <key>Identifier</key>
-    <string>com.github.aznh7-recipes.download.Egnyte Desktop Sync NoPrefs</string>
+    <string>com.github.aznh7-recipes.download.egnyte</string>
     <key>Input</key>
     <dict>
         <key>LOCALE</key>
