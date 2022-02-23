@@ -9,7 +9,7 @@
 	<key>Input</key>
 	<dict>
 		<key>GROUP_TEMPLATE</key>
-		<string>GroupTemplate.xml</string>
+		<string>SmartGroupTemplate.xml</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>POLICY_CATEGORY</key>
