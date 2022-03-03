@@ -9,7 +9,7 @@
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>Google Drive File Stream</string>
+		<string>Google Drive</string>
 	</dict>
 	<key>ParentRecipe</key>
 	<string>com.github.aznh7-recipes.download.googledrivefs</string>
@@ -21,11 +21,9 @@
 			<key>Arguments</key>
 			<dict>
 				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack/</string>
+				<string>%RECIPE_CACHE_DIR%/expanded</string>
 				<key>flat_pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/%filename%/GoogleDrive.pkg</string>
-				<key>purge_destination</key>
-				<string>true</string>
+				<string>%pathname%/GoogleDrive.pkg</string>
 			</dict>
 		</dict>
 		<dict>
@@ -33,21 +31,21 @@
 			<string>PkgPayloadUnpacker</string>
 			<key>Arguments</key>
 			<dict>
-				<key>pkg_payload_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack/GoogleDrive.pkg/Payload</string>
 				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack/Applications</string>
+				<string>%RECIPE_CACHE_DIR%/unpack</string>
+				<key>pkg_payload_path</key>
+				<string>%RECIPE_CACHE_DIR%/expanded/GoogleDrive_x86_64.pkg/Payload</string>
+				<key>purge_destination</key>
+				<string>true</string>
 			</dict>
 		</dict>
 		<dict>
-			<key>Comment</key>
-			<string>Get version from the app</string>
 			<key>Processor</key>
 			<string>Versioner</string>
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack/Applications/Google Drive.app/Contents/Info.plist</string>
+				<string>%RECIPE_CACHE_DIR%/unpack/Google Drive.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
@@ -58,7 +56,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>source_pkg</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/%filename%/GoogleDrive.pkg</string>
+				<string>%pathname%/GoogleDrive.pkg</string>
 				<key>pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
 			</dict>
@@ -70,10 +68,11 @@
 			<dict>
 				<key>path_list</key>
 				<array>
+					<string>%RECIPE_CACHE_DIR%/expanded</string>
 					<string>%RECIPE_CACHE_DIR%/unpack</string>
 				</array>
 			</dict>
-		</dict>	
+		</dict>
 	</array>
 </dict>
 </plist>
