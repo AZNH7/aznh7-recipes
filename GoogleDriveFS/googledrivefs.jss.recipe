@@ -8,58 +8,47 @@
 	<string>com.github.aznh7-recipes.jss.googledrivefs</string>
 	<key>Input</key>
 	<dict>
+		<key>CATEGORY</key>
+		<string>Productivity</string>
+		<key>GROUP_NAME</key>
+		<string>%NAME%-update-smart</string>
 		<key>GROUP_TEMPLATE</key>
 		<string>SmartGroupTemplate.xml</string>
+		<key>NAME</key>
+		<string>Google Drive File Stream</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Testing</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
-		<key>POLICY_CATEGORY</key>
-		<string>%CATEGORY%</string>
-		<key>package_notes</key>
-		<string>Product of AutoPkg</string>
-
-		<key>GROUP_NAME</key>
-		<string>%NAME%-Testing</string>
-
-		<key>NAME</key>
-		<string>Google Drive</string>
-		<key>CATEGORY</key>
-		<string>Testing</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Access your Drive files directly from the cloud to your Mac or PC, freeing up disk space and network bandwidth.  Because Drive files are stored in the cloud, any changes you or your collaborators make are automatically updated everywhere, so you’ll always have the latest version.  You can also make Drive files available for offline access.  These cached files sync to the cloud and all your devices when you're back online.
-
-With Drive, you can:
-  * Quickly see all your Google Drive files in Finder (including Team Drives).
-  * Browse and organize Google Drive files without downloading all of them to your computer.
-  * Choose which files or folders you'd like to make available offline.
-  * Open files in common apps like Microsoft Office and Adobe Photoshop.
-
-Drive is only usable with G-Suite accounts.</string>
+		<string></string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>%RECIPE_DIR%/GoogleDrive.png</string>
+		<string>%NAME%.png</string>
+		<key>pkg_path</key>
+		<string></string>
+		<key>STOPPROCESSINGIF_PREDICATE</key>
+		<string>download_changed == False</string>
 	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
 	<key>ParentRecipe</key>
 	<string>com.github.aznh7-recipes.pkg.googledrivefs</string>
 	<key>Process</key>
 	<array>
 		<dict>
-			<key>Processor</key>
-			<string>JSSImporter</string>
 			<key>Arguments</key>
 			<dict>
-				<key>pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
-				<key>prod_name</key>
-				<string>%NAME%</string>
+				<key>predicate</key>
+				<string>%STOPPROCESSINGIF_PREDICATE%</string>
+			</dict>
+			<key>Processor</key>
+			<string>StopProcessingIf</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
-				<key>policy_category</key>
-				<string>%POLICY_CATEGORY%</string>
-				<key>policy_template</key>
-				<string>%POLICY_TEMPLATE%</string>
-				<key>self_service_icon</key>
-				<string>%SELF_SERVICE_ICON%</string>
-				<key>self_service_description</key>
-				<string>%SELF_SERVICE_DESCRIPTION%</string>
 				<key>groups</key>
 				<array>
 					<dict>
@@ -71,7 +60,19 @@ Drive is only usable with G-Suite accounts.</string>
 						<string>%GROUP_TEMPLATE%</string>
 					</dict>
 				</array>
+				<key>policy_category</key>
+				<string>%POLICY_CATEGORY%</string>
+				<key>policy_template</key>
+				<string>%POLICY_TEMPLATE%</string>
+				<key>prod_name</key>
+				<string>%NAME%</string>
+				<key>self_service_description</key>
+				<string>%SELF_SERVICE_DESCRIPTION%</string>
+				<key>self_service_icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
 			</dict>
+			<key>Processor</key>
+			<string>JSSImporter</string>
 		</dict>
 	</array>
 </dict>
