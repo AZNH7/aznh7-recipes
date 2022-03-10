@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of FileZilla and imports it into your JSS.</string>
+	<string>Uses parent pkg recipe to downloads latest FileZilla and import it into the JSS.</string>
 	<key>Identifier</key>
 	<string>com.github.aznh7-recipes.jss.FileZilla</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>Productivity</string>
+		<string>Internet</string>
 		<key>GROUP_NAME</key>
 		<string>%NAME%-update-smart</string>
 		<key>GROUP_TEMPLATE</key>
@@ -21,12 +21,12 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string></string>
+		<string>FileZilla is a fast and reliable cross-platform FTP, FTPS and SFTP client.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>%NAME%.png</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>1.0.0</string>
+	<string>0.4.0</string>
 	<key>ParentRecipe</key>
 	<string>com.github.aznh7-recipes.pkg.FileZilla</string>
 	<key>Process</key>
@@ -57,6 +57,8 @@
 				<string>%SELF_SERVICE_DESCRIPTION%</string>
 				<key>self_service_icon</key>
 				<string>%SELF_SERVICE_ICON%</string>
+				<key>version</key>
+				<string>%version%</string>
 			</dict>
 			<key>Processor</key>
 			<string>JSSImporter</string>
