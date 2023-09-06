@@ -27,6 +27,18 @@ No idea if all Firefox builds are available in all the same localizations, so yo
 		<string>PatchTemplate-selfservice.xml</string>
 		<key>POLICY_NAME</key>
 		<string>Install Latest %NAME%</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>JamfPolicyTemplate.xml</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>Firefox is a web browser from Mozilla.</string>
+		<key>SELF_SERVICE_DISPLAY_NAME</key>
+		<string>Install Latest %NAME%</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>%NAME%.png</string>
+		<key>TESTING_GROUP_NAME</key>
+		<string>Testing</string>
+		<key>UPDATE_PREDICATE</key>
+		<string>pkg_uploaded == False</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
