@@ -31,9 +31,55 @@ No idea if all Firefox builds are available in all the same localizations, so yo
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.grahampugh-recipes.jamf.Firefox</string>
+	<string>com.github.rtrouton.pkg.Firefox</string>
 	<key>Process</key>
 	<array>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>pkg_category</key>
+					<string>%CATEGORY%</string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>predicate</key>
+					<string>%UPDATE_PREDICATE%</string>
+				</dict>
+				<key>Processor</key>
+				<string>StopProcessingIf</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>computergroup_name</key>
+					<string>%GROUP_NAME%</string>
+					<key>computergroup_template</key>
+					<string>%GROUP_TEMPLATE%</string>
+					<key>replace_group</key>
+					<string>True</string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>icon</key>
+					<string>%SELF_SERVICE_ICON%</string>
+					<key>policy_name</key>
+					<string>%POLICY_NAME%</string>
+					<key>policy_template</key>
+					<string>%POLICY_TEMPLATE%</string>
+					<key>replace_policy</key>
+					<string>True</string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+			</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -45,6 +91,8 @@ No idea if all Firefox builds are available in all the same localizations, so yo
 				<string>%PATCH_SOFTWARE_TITLE%</string>
 				<key>patch_template</key>
 				<string>%PATCH_TEMPLATE%</string>
+				<key>replace_patch</key>
+				<string>True</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
