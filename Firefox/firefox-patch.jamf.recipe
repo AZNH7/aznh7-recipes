@@ -83,12 +83,10 @@ No idea if all Firefox builds are available in all the same localizations, so yo
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>patch_icon_policy_name</key>
-				<string>%POLICY_NAME%</string>
 				<key>patch_name</key>
-				<string>%PATCH_NAME%</string>
+				<string>%patch_softwaretitle% - %version%</string>
 				<key>patch_softwaretitle</key>
-				<string>%PATCH_SOFTWARE_TITLE%</string>
+				<string>Mozilla Firefox</string>
 				<key>patch_template</key>
 				<string>%PATCH_TEMPLATE%</string>
 				<key>replace_patch</key>
