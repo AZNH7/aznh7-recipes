@@ -16,7 +16,7 @@ No idea if all Firefox builds are available in all the same localizations, so yo
 		<key>CATEGORY</key>
 		<string>Browsers</string>
 		<key>NAME</key>
-		<string>Firefox</string>
+		<string>Mozilla Firefox</string>
 		<key>PATCH_ENABLED</key>
 		<string>true</string>
 		<key>PATCH_NAME</key>
@@ -95,14 +95,14 @@ No idea if all Firefox builds are available in all the same localizations, so yo
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>patch_icon_policy_name</key>
+				<string>%POLICY_NAME%</string>
 				<key>patch_name</key>
-				<string>%patch_softwaretitle% - %version%</string>
+				<string>%PATCH_NAME%</string>
 				<key>patch_softwaretitle</key>
-				<string>Mozilla Firefox</string>
+				<string>%PATCH_SOFTWARE_TITLE%</string>
 				<key>patch_template</key>
 				<string>%PATCH_TEMPLATE%</string>
-				<key>replace_patch</key>
-				<string>True</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
